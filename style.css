@@ -1,0 +1,414 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hr {
+  border: none;
+}
+
+.body-img {
+  background: linear-gradient(
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 1)
+  );
+}
+
+.body-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/pexels-karsten-madsen-18104.jpg) no-repeat center
+    center/cover;
+  z-index: -1;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  width: 100vw;
+  color: white;
+  /* border-bottom: 1px red solid; */
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav {
+  display: flex;
+}
+
+.navbar-name {
+  margin-left: 100px;
+}
+
+.navbar-nav li {
+  list-style: none;
+  margin-right: 50px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  /* border-bottom: 1px solid green; */
+}
+
+.hero-name {
+  font-size: 50px;
+  margin-bottom: 3px;
+}
+
+.hero-text {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.hero-dev {
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.hero-button {
+  padding: 15px;
+  /* font-weight: bolder; */
+  background-color: white;
+  font-size: 15px;
+  /* border: none; */
+  border-radius: 6px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* About Me */
+.about {
+  /* border-bottom: 1px solid brown; */
+  display: flex;
+  padding: 40px 10vw;
+}
+
+.about-img {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img img {
+  height: 480px;
+  border: 10px solid white;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.45);
+}
+
+.about-info {
+  padding: 25px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.about-info h2 {
+  font-size: xx-large;
+  /* margin-bottom: 10px; */
+}
+
+.about-info hr {
+  width: 60px;
+  height: 5px;
+  /* text-align: center; */
+  background-color: orangered;
+  margin-bottom: 10px;
+}
+
+.about-info h4 {
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+
+.about-info p {
+  margin-bottom: 10px;
+}
+
+.about-socials {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.about-socials li {
+  list-style: none;
+  padding: 10px 15px;
+}
+
+.about-socials li a {
+  color: black;
+}
+
+.about i {
+  font-size: 20px;
+}
+
+.about-info button {
+  margin: 10px 10px;
+}
+
+.about-button {
+  background-color: orangered;
+  color: white;
+}
+
+/* My Skills */
+.rectangle {
+  height: 20px;
+  width: 500px;
+  background-color: #555;
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
+
+.rectangle div {
+  height: 100%;
+  width: 90%;
+  background-color: orangered;
+}
+
+.skills {
+  color: white;
+  padding-top: 10px;
+  background: url(img/pexels-karsten-madsen-18104.jpg) rgba(0, 0, 0, 0.5);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.skills h1 {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+.skills hr {
+  width: 60px;
+  height: 4px;
+  margin: 0 auto;
+  background-color: orangered;
+  margin-bottom: 10px;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10vw;
+  width: 100vw;
+}
+
+.skills-content li {
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* My Work */
+.work {
+  /* border-bottom: 1px solid purple; */
+  margin: 10px;
+}
+.work h1 {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+.work hr {
+  width: 60px;
+  height: 4px;
+
+  margin: 0 auto;
+  background-color: orangered;
+  margin-bottom: 10px;
+}
+
+.work-div-top {
+  display: flex;
+  padding: 10px 6vw;
+  justify-content: space-evenly;
+  height: 320px;
+}
+
+.work-div-bottom {
+  display: flex;
+  padding: 10px 6vw;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  height: 320px;
+}
+
+.work-box {
+  /* border: 1px solid black; */
+  /* padding: 30px 3px; */
+  width: 30%;
+  border: 10px solid white;
+  box-shadow: 0px 0px 15px 5px black;
+  margin-bottom: 10px;
+}
+
+.work-box img {
+  height: 100%;
+  width: 100%;
+}
+
+/* My Services */
+.services {
+  color: white;
+  background: url(img/pexels-karsten-madsen-18104.jpg) rgba(0, 0, 0, 0.5);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.services h1 {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+  padding-top: 10px;
+}
+
+.services hr {
+  width: 60px;
+  height: 4px;
+  margin: 0 auto;
+  background-color: orangered;
+  margin-bottom: 10px;
+}
+
+.services-div {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 3vw;
+  padding-bottom: 20px;
+}
+
+.services-box {
+  /* border: 1px solid black; */
+  width: 22%;
+  padding: 40px 20px;
+  /* padding-bottom: 30px; */
+  text-align: center;
+  /* border: 10px solid white; */
+  box-shadow: 0px 0px 10px 2px black;
+  color: black;
+  /* background-color: white; */
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.services-box hr {
+  width: 200px;
+}
+
+.services-icon {
+  font-size: 80px;
+  /* text-align: center; */
+}
+
+.services-box h1 {
+  margin-bottom: 10px;
+}
+
+/* Contact Me */
+.contact {
+  padding: 10px 120px;
+  width: 100vw;
+  height: 80px;
+  /* border-bottom: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orangered;
+}
+
+.contact-text {
+  font-size: 35px;
+  color: white;
+}
+
+.touch {
+  width: 100vw;
+  height: 90px;
+  /* border-bottom: 1px solid blue; */
+  /* display: flex; */
+  text-align: center;
+  /* flex-direction: row; */
+  /* align-items: center; */
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.touch-text {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+.touch hr {
+  width: 60px;
+  height: 4px;
+  text-align: center;
+  background-color: orangered;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.touch-socials {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}
+
+.touch-socials li {
+  list-style: none;
+  /* padding: 2px 60px; */
+}
+
+.touch-socials li a {
+  text-decoration: none;
+  color: black;
+}
+
+.touch i {
+  font-size: 37px;
+}
+
+/* Footer */
+.footer {
+  width: 100vw;
+  height: 30px;
+  /* border-bottom: 1px solid black; */
+  /* display: flex;
+  align-items: center; */
+  text-align: center;
+  background-color: black;
+  padding-top: 5px;
+}
+
+.footer-text {
+  color: white;
+}
